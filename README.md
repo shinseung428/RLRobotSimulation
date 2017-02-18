@@ -28,11 +28,17 @@ To run the project, follwing requriements should be installed:
 -numpy [installation](https://docs.scipy.org/doc/numpy/user/install.html)  
 -tensorflow [installation](https://www.tensorflow.org/install/)
 
+##What to see  
+![agent](./results/program_env.png)
+
+
 ##To run the agent in static environment
 $ python2.7 static test.py  
+  
 ![agent](./results/static_env.png)
 
 ##To run the agent in dynamic environment 
-$ python2.7 dynamic test.py
+$ python2.7 dynamic test.py  
+  
 ![agent](./results/dynamic_env.png)
 
