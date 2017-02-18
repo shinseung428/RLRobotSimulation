@@ -10,10 +10,20 @@ There are two different goals:
 2. Navigate towards the goal while avoiding obstacles  
 
 In the neural network folder, there are two sub folders.  
-In obstacle avoidance folder, there are files that run the agent under the static/dynamic envrionment. The agent in this environment has one goal which is to avoid obstacles in the environment.   
+In the obstacle avoidance folder, there are files that run the agent under static/dynamic envrionments. The agent in this environment has one goal which is to avoid obstacles.   
 
-In the second folder, reach destination, there are files that run the agent under the static/dynamic environment. The agent has two goals. First is to avoid obstacles, and second is to navigate towards the destination(marked green).  
+In the second folder, reach destination folder, there are files that run the agent under static/dynamic environments. The agent has two goals. First is to avoid obstacles, and second is to navigate towards the goal(marked green).  
 
+##Notes
+-The state of the agent is represented depending on the sensor readings.  
+ e.g. if each sensor range is 0 to 10 (11 possible values)  
+      number of possible states = 7^11 = 1,977,326,743  
+-Q learning is used together with the function approximation.  
+-Occupancy grid mapping is used to locate obstacles in the environment.  
+(However, this information is not currently used to help the agent make decisions)  
+  
+
+##Requirements
 To run the project, follwing requriements should be installed:  
 -pygame [installation](http://www.pygame.org/lofi.html)  
 -matplotlib [installation](http://matplotlib.org/users/installing.html)  
@@ -25,6 +35,5 @@ $ python2.7 static test.py
 
 ##To run the agent in dynamic environment 
 $ python2.7 dynamic test.py
-
 
 
