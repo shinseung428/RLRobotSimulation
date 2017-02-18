@@ -29,7 +29,15 @@ To run the project, follwing requriements should be installed:
 -tensorflow [installation](https://www.tensorflow.org/install/)
 
 ##What to see  
-![agent](./results/program_env.png)
+![agent](./results/program_env.png)  
+1)Current episode  
+2)Epsilon value(decides wheter to choose best action or random action)  
+3)Seven sensor readings(in range between 0 to 20)  
+4)Expected reward of each actions  
+5)Distance and relative angle to the goal(used to represent the state of the agent)  
+6)Current reward  
+7)Buttons to control the environment  
+8)Probabiliy that shows if detected obstacle is static  
 
 
 ##To run the agent in static environment
