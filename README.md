@@ -16,7 +16,7 @@ In the second folder, reach destination folder, there are files that run the age
 
 **Before running the program, the code below should be changed to the user's path  
 sys.path.insert(0,'/Users/sshin/Desktop/github/RLRobotSimulation/neural network')  
-should include the path to the neural network folder  
+should include the path to the neural network folder**  
 
 ##Notes
 -The state of the agent is represented depending on the sensor readings.  
