@@ -7,10 +7,10 @@ The blue robot has no prior knowledge of the environment. It doesn't know where 
 
 There are two different goals:
 First is to avoid obstacles in the environment like in the figure below  
-![static_env](./results/static_env.png)
+![static_env](./results/static_env.png =100x50)
 
 Second is to avoid obstacles and reach to the goal like in the figure below  
-![static_env_goal](./results/static_env_goal.png)
+![static_env_goal](./results/static_env_goal.png =100x50)
 
 To run the project, follwing requriements should be installed:  
 -pygame [installation](http://www.pygame.org/lofi.html)  
