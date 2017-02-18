@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0,'/Users/tomatotray/Desktop/RLRobotSimulation/RLRobotSimulation/neural network')
+sys.path.insert(0,'/Users/sshin/Desktop/github/RLRobotSimulation/neural network')
 
 import pygame
 import math

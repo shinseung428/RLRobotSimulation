@@ -4,7 +4,7 @@ import time
 import array
 import numpy as np
 from PIL import Image
-import LineDetector
+#import LineDetector
 
 from pygame import gfxdraw
 import matplotlib.pyplot as plt
@@ -44,24 +44,24 @@ class Map:
     plt.ion()
 
   
-  def checkLine(self,coordinate):
-    x = int(coordinate[0])
-    y = int(coordinate[1])
-    img = np.zeros((100,100,3),'uint8')
-    a = 0
-    b = 0
-    for i in range(x-50,x+50):
-      for j in range(y-50,y+50):
-        if self.count_map[i][j] > 0 and self.occ_map[i][j]/self.count_map[i][j] >  self.threshold:
-          img[a,b,:] = 0
-        else:
-          img[a,b,:] = 250
-        b += 1
-      b = 0
-      a += 1
+  # def checkLine(self,coordinate):
+  #   x = int(coordinate[0])
+  #   y = int(coordinate[1])
+  #   img = np.zeros((100,100,3),'uint8')
+  #   a = 0
+  #   b = 0
+  #   for i in range(x-50,x+50):
+  #     for j in range(y-50,y+50):
+  #       if self.count_map[i][j] > 0 and self.occ_map[i][j]/self.count_map[i][j] >  self.threshold:
+  #         img[a,b,:] = 0
+  #       else:
+  #         img[a,b,:] = 250
+  #       b += 1
+  #     b = 0
+  #     a += 1
 
-    frame = Image.fromarray(img,'RGB')
-    return LineDetector.findLine(frame,self.internalCounter)
+  #   frame = Image.fromarray(img,'RGB')
+  #   return LineDetector.findLine(frame,self.internalCounter)
 
 
   #this function is used to determine if detected obstacle is static
