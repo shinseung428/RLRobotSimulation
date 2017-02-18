@@ -5,12 +5,14 @@ In this project, the robot(agent) avoids static/dynamic obstacles in the environ
 
 The blue robot has no prior knowledge of the environment. It doesn't know where the obstacles are. It uses seven sensors(e.g. ultrasonic/laser) to detect its surroundings, and uses these measured information to make decisions(move forward, turn left/right).  
 
-There are two different goals:
-First is to avoid obstacles in the environment like in the figure below  
-![static_env](./results/static_env.png =100x50)
+There are two different goals:  
+1. Avoid obstacles in the environment  
+2. Navigate towards the goal while avoiding obstacles  
 
-Second is to avoid obstacles and reach to the goal like in the figure below  
-![static_env_goal](./results/static_env_goal.png =100x50)
+In the neural network folder, there are two sub folders.  
+In obstacle avoidance folder, there are files that run the agent under the static/dynamic envrionment. The agent in this environment has one goal which is to avoid obstacles in the environment.   
+
+In the second folder, reach destination, there are files that run the agent under the static/dynamic environment. The agent has two goals. First is to avoid obstacles, and second is to navigate towards the destination(marked green).  
 
 To run the project, follwing requriements should be installed:  
 -pygame [installation](http://www.pygame.org/lofi.html)  
@@ -18,16 +20,11 @@ To run the project, follwing requriements should be installed:
 -numpy [installation](https://docs.scipy.org/doc/numpy/user/install.html)  
 -tensorflow [installation]()
 
-##Running in static environment
+##To run the agent in static environment
 $ python2.7 static test.py
 
-###Screenshot
-
-
-##Running in dynamic environment 
+##To run the agent in dynamic environment 
 $ python2.7 dynamic test.py
-
-###Screenshot
 
 
 
