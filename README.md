@@ -16,8 +16,8 @@ In the second folder, reach destination folder, there are files that run the age
 
 ##Notes
 -The state of the agent is represented depending on the sensor readings.  
-__e.g. if each sensor range is 0 to 10 (11 possible values)  
-__number of possible states = 7^11 = 1,977,326,743  
+ e.g. if each sensor range is 0 to 10 (11 possible values)  
+ number of possible states = 7^11 = 1,977,326,743  
 -Q learning is used together with the function approximation.  
 -Occupancy grid mapping is used to locate obstacles in the environment.  
 (However, this information is not currently used to help the agent make decisions)  
