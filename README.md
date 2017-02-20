@@ -10,9 +10,11 @@ There are two different goals:
 2. Navigate towards the goal while avoiding obstacles  
 
 In the neural network folder, there are two sub folders.  
-In the obstacle avoidance folder, there are files that run the agent under static/dynamic envrionments. The agent in this environment has one goal which is to avoid obstacles.   
+Obstacle avoidance folder contains files that run the agent under static/dynamic envrionments.  
+The agent in this environment has one goal which is to avoid obstacles.   
 
-In the second folder, reach destination folder, there are files that run the agent under static/dynamic environments. The agent has two goals. First is to avoid obstacles, and second is to navigate towards the goal(marked green).  
+Reach destination folder contains files that run the agent under static/dynamic environments.  
+The agent has two goals. i) Avoid obstacles, and ii) navigate towards the goal(marked green).  
 
 **Before running the program, the path set in the code should be changed to include the neural network folder**  
 sys.path.insert(0,'/Users/sshin/Desktop/github/RLRobotSimulation/neural network')  
