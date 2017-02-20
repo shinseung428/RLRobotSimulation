@@ -16,7 +16,8 @@ The agent in this environment has one goal which is to avoid obstacles.
 Reach destination folder contains files that run the agent under static/dynamic environments.  
 The agent has two goals. i) Avoid obstacles, and ii) navigate towards the goal(marked green).  
 
-**Before running the program, the path set in the code should be changed to include the neural network folder**  
+**Before running the program, the path must be changed to include the neural network folder**  
+ex) my path to the neural network folder:  
 sys.path.insert(0,'/Users/sshin/Desktop/github/RLRobotSimulation/neural network')  
 
 ##Notes
